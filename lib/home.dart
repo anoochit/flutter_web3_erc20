@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   var contractAddress = '0x318aEA2A8b03DBE3B7d13AACF0900323A045c984';
 
   // change to your another wallet address to test
-  var wallet2 = '0x3F0262d74D76E0B46b0289A43541e69428e94EDA';
+  var wallet3 = '0x3F0262d74D76E0B46b0289A43541e69428e94EDA';
 
   Timer? timer;
 
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                             contractSigner,
                             "transfer",
                             [
-                              wallet2,
+                              wallet3,
                               "0x" + BigInt.parse(toBase(Decimal.parse("1.0"), 18).toString()).toRadixString(16),
                             ],
                           ),
